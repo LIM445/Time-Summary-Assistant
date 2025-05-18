@@ -1,0 +1,12 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.useLatest = useLatest;
+var _react = require("react");
+function useLatest(value) {
+  var ref = (0, _react.useRef)(value);
+  ref.current = value;
+  return ref;
+}
