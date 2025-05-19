@@ -91,7 +91,7 @@ def get_natural_language_summary(summary_text, time_label):
 
     prompt = (
         f"以下是我在{time_label}期间使用不同电脑应用的时长统计：\n\n{summary_text}\n\n"
-        "请根据这些数据，用简洁的自然语言总结我主要使用了哪些应用，每个应用的大致用途，是否存在时间分配不合理的情况，并提出建议。（完全使用中文，不要使用markdown源码，直接输出中文，以女仆语气输出"
+        "请根据这些数据，用简洁的自然语言总结我主要使用了哪些应用，每个应用的大致用途，是否存在时间分配不合理的情况，并提出建议。(以女仆语气输出)"
     )
 
     response = client.chat.completions.create(
